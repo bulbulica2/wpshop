@@ -1,0 +1,37 @@
+#wpsr_ipopup_wrap {
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+#wpsr_ipopup_wrap section{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 400px;
+    box-shadow: 0 2px 9px -1px #000;
+    background: #fff;
+}
+#wpsr_ipopup_wrap section iframe{
+    width: 100%;
+    height: 100%;
+}
+.wpsr_ipopup_close {
+    position: absolute;
+    top: -30px;
+    right: 0;
+    background: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 2px 9px -1px #000;
+}

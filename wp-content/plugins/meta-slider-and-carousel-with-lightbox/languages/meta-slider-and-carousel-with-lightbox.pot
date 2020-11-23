@@ -1,0 +1,415 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Meta slider and carousel with lightbox\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-14 07:12+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.4.0; wp-5.4.2"
+
+#: includes/admin/igsp-how-it-work.php:258
+msgid "5 stars!"
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:23
+msgid "Add Image Gallery"
+msgstr ""
+
+#: includes/admin/metabox/wp-igsp-sett-metabox.php:27
+msgid "Add Images to Gallery"
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:24
+msgid "Add New Image Gallery"
+msgstr ""
+
+#: includes/admin/metabox/wp-igsp-sett-metabox.php:27
+msgid "Add to Gallery"
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:32
+msgid "Album Image"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:193
+msgid "All Shortcodes"
+msgstr ""
+
+#: includes/admin/settings/wp-igsp-img-popup-data.php:42
+msgid "Alternative Text"
+msgstr ""
+
+#: includes/admin/class-wp-igsp-admin.php:271
+msgid "Attachment Found."
+msgstr ""
+
+#: includes/admin/settings/wp-igsp-img-popup-data.php:50
+msgid "Caption"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:207
+msgid "Check plugin document for shortcode parameters and demo for designs."
+msgstr ""
+
+#: includes/admin/metabox/wp-igsp-sett-metabox.php:24
+msgid "Choose Gallery Images"
+msgstr ""
+
+#: includes/admin/metabox/wp-igsp-sett-metabox.php:52
+msgid ""
+"Choose your desired images for gallery. Hold Ctrl key to select multiple "
+"images at a time. Add the shortcode"
+msgstr ""
+
+#: includes/admin/settings/wp-igsp-img-popup-data.php:63
+msgid "Close"
+msgstr ""
+
+#: includes/admin/settings/wp-igsp-img-popup.php:17
+msgid "Close (Esc)"
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:71
+msgid "Custom field deleted."
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:70
+msgid "Custom field updated."
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:209
+msgid "Demo for Designs"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:208
+msgid "Documentation"
+msgstr ""
+
+#: includes/class-wp-igsp-script.php:126
+#: includes/admin/settings/wp-igsp-img-popup-data.php:19
+#: includes/admin/metabox/wp-igsp-sett-metabox.php:40
+msgid "Edit Image"
+msgstr ""
+
+#: includes/admin/settings/wp-igsp-img-popup-data.php:30
+msgid "Edit Image From Attachment Page"
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:25
+msgid "Edit Image Gallery"
+msgstr ""
+
+#: includes/class-wp-igsp-script.php:125
+#: includes/admin/metabox/wp-igsp-sett-metabox.php:39
+msgid "Edit Image in Popup"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:258
+msgid "Enjoyed this plugin? You can help by rate this plugin"
+msgstr ""
+
+#: includes/admin/settings/wp-igsp-img-popup-data.php:45
+msgid "Enter image alternative text."
+msgstr ""
+
+#: includes/admin/settings/wp-igsp-img-popup-data.php:53
+msgid "Enter image caption."
+msgstr ""
+
+#: includes/admin/settings/wp-igsp-img-popup-data.php:37
+msgid "Enter image title."
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:196
+msgid "Gallery Carousel Slider"
+msgstr ""
+
+#: includes/admin/metabox/wp-igsp-sett-metabox.php:27
+msgid "Gallery Images"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:197
+msgid "Gallery Slider"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:166
+msgid "Geeting Started with Meta Slider"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:243
+msgid "Go Premium "
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:255
+msgid "Help to improve this plugin!"
+msgstr ""
+
+#: includes/admin/settings/hire-us.php:18
+msgid "Highlight of Hiring:"
+msgstr ""
+
+#: includes/admin/class-wp-igsp-admin.php:63
+msgid "Hire Us"
+msgstr ""
+
+#: includes/admin/settings/hire-us.php:15
+msgid "Hire Us - Get unlimited expert WordPress Support and Development"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:22
+#: includes/admin/igsp-how-it-work.php:118
+msgid "How It Works"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:158
+msgid "How It Works - Display and shortcode"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:22
+msgid "How it works, our plugins and offers"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:181
+msgid "How Shortcode Works"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://www.wponlinesupport.com/"
+msgstr ""
+
+#. URI of the plugin
+msgid "https://www.wponlinesupport.com/plugins/"
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:21 includes/wp-igsp-post-types.php:22
+msgid "Image Gallery"
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:79
+msgid "Image Gallery draft updated."
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:74
+msgid "Image Gallery published."
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:73
+#, php-format
+msgid "Image Gallery restored to revision from %s"
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:75
+msgid "Image Gallery saved."
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:77
+#, php-format
+msgid "Image Gallery scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:76
+msgid "Image Gallery submitted."
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:69 includes/wp-igsp-post-types.php:72
+msgid "Image Gallery updated."
+msgstr ""
+
+#: includes/admin/metabox/wp-igsp-sett-metabox.php:52
+msgid "in your same POST or PAGE."
+msgstr ""
+
+#: frontend-gallery-slider.php:119
+#, php-format
+msgid ""
+"It looks like you had PRO version %s of this plugin activated. To avoid "
+"conflicts the extra version has been deactivated and we recommend you delete "
+"it."
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:78
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:35
+msgid "Meta Gallery"
+msgstr ""
+
+#. Name of the plugin
+msgid "Meta slider and carousel with lightbox"
+msgstr ""
+
+#: includes/admin/settings/premium.php:15
+msgid "Meta slider and carousel with lightbox - Features"
+msgstr ""
+
+#: includes/admin/class-wp-igsp-admin.php:97
+msgid "Meta slider and carousel with lightbox - Settings"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:204
+msgid "Need Support?"
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:26
+msgid "New Image Gallery"
+msgstr ""
+
+#: includes/admin/metabox/wp-igsp-sett-metabox.php:49
+msgid "No Gallery Images"
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:29
+msgid "No Image Gallery found"
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:30
+msgid "No Image Gallery found in Trash"
+msgstr ""
+
+#: includes/admin/class-wp-igsp-admin.php:178
+msgid "Number of Photos"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:121
+msgid "Our Plugins"
+msgstr ""
+
+#: includes/admin/settings/wp-igsp-img-popup.php:22
+msgid "Please Wait"
+msgstr ""
+
+#. Description of the plugin
+msgid ""
+"Plugin add a gallery meta box in your post, page and create a Image gallery "
+"menu tab. Display with a lightbox. Also work with Gutenberg shortcode block."
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:34
+msgid "Remove Album Image"
+msgstr ""
+
+#: includes/admin/metabox/wp-igsp-sett-metabox.php:28
+msgid "Remove Gallery Images"
+msgstr ""
+
+#: includes/class-wp-igsp-script.php:127
+#: includes/admin/metabox/wp-igsp-sett-metabox.php:41
+msgid "Remove Image"
+msgstr ""
+
+#: includes/admin/settings/wp-igsp-img-popup-data.php:62
+msgid "Save Changes"
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:28
+msgid "Search Image Gallery"
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:33
+msgid "Set Album Image"
+msgstr ""
+
+#: includes/admin/class-wp-igsp-admin.php:177
+msgid "Shortcode"
+msgstr ""
+
+#: includes/admin/class-wp-igsp-admin.php:255
+#: includes/admin/class-wp-igsp-admin.php:291
+msgid "Sorry, Something happened wrong."
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:185
+msgid ""
+"Step-1: If you are adding Gallery in POST or PAGE, kinldy use the bellow "
+"shortcode in the same page. Just add the shortcode in WordPress editor."
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:170
+msgid ""
+"Step-1: This plugin create a Gallery mata box under your POST, PAGE as well "
+"as a Meta Gallery tab in WordPress menu section"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:186
+msgid ""
+"Step-2: If you are using \"Meta Gallery tab\", then click on \"Meta Gallery--"
+"> Meta Gallery\" and find out the shortcode."
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:171
+msgid ""
+"Step-2: You can you to any POST and PAGE and check a \"Meta slider and "
+"carousel with lightbox - Settings\" meta box in the end."
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:172
+msgid ""
+"Step-3: Under \"Choose Gallery Images\" click on \"Gallery Images\" button "
+"and select multiple images from WordPress media and click on \"Add to "
+"Gallery\" button. Once images added you can add the shortcode in the the "
+"same POST OR PAGE"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:173
+msgid ""
+"Step-4: If you want a sapreate section, then you can see \"Meta Galley\" tab "
+"in the Wordpress menu."
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:174
+msgid ""
+"Step-5: Use this tab to manage you image galleries and use the shortcode "
+"from the list."
+msgstr ""
+
+#: frontend-gallery-slider.php:118
+#, php-format
+msgid "Thank you for activating %s"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:103
+msgid ""
+"There was an error retrieving the data from the server. Please try again "
+"later."
+msgstr ""
+
+#: includes/admin/settings/wp-igsp-img-popup-data.php:34
+msgid "Title"
+msgstr ""
+
+#: includes/admin/class-wp-igsp-admin.php:60
+msgid "Upgrade to PRO"
+msgstr ""
+
+#: includes/admin/class-wp-igsp-admin.php:60
+msgid "Upgrade to PRO - Meta slider and carousel with lightbox"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:227
+msgid "Upgrate to Pro"
+msgstr ""
+
+#: includes/wp-igsp-post-types.php:27
+msgid "View Image Gallery"
+msgstr ""
+
+#: includes/admin/igsp-how-it-work.php:244
+msgid "View PRO Demo "
+msgstr ""
+
+#. Author of the plugin
+msgid "WP OnlineSupport"
+msgstr ""
+
+#: includes/admin/class-wp-igsp-admin.php:313
+msgid "Your changes saved successfully."
+msgstr ""
