@@ -1,0 +1,24 @@
+28-11-2020 08:26:02 - ERROR - v: 6.8.7 - m: 43.7 MB, u: 0 - cURL error 6: Could not resolve host: www.thenewsletterplugin.com (http_request_failed) - 
+28-11-2020 08:26:09 - ERROR - v: 6.8.7 - m: 47.3 MB, u: 0 - cURL error 6: Could not resolve host: www.thenewsletterplugin.com (http_request_failed) - 
+28-11-2020 08:27:01 - ERROR - v: 6.8.7 - m: 49.7 MB, u: 1 - cURL error 28: Operation timed out after 5000 milliseconds with 0 bytes received (http_request_failed) - 
+28-11-2020 08:27:06 - ERROR - v: 6.8.7 - m: 49.8 MB, u: 1 - cURL error 28: Operation timed out after 5000 milliseconds with 0 bytes received (http_request_failed) - 
+28-11-2020 08:27:11 - ERROR - v: 6.8.7 - m: 50.0 MB, u: 1 - cURL error 28: Operation timed out after 5003 milliseconds with 0 bytes received (http_request_failed) - 
+28-11-2020 08:27:21 - ERROR - v: 6.8.7 - m: 50.5 MB, u: 1 - cURL error 28: Operation timed out after 5002 milliseconds with 0 bytes received (http_request_failed) - 
+28-11-2020 08:27:26 - ERROR - v: 6.8.7 - m: 50.6 MB, u: 1 - cURL error 28: Operation timed out after 5000 milliseconds with 0 bytes received (http_request_failed) - 
+28-11-2020 08:29:24 - ERROR - v: 6.8.7 - m: 49.7 MB, u: 1 - cURL error 28: Resolving timed out after 5000 milliseconds (http_request_failed) - 
+28-11-2020 08:29:35 - ERROR - v: 6.8.7 - m: 49.7 MB, u: 1 - cURL error 28: Resolving timed out after 5000 milliseconds (http_request_failed) - 
+28-11-2020 08:29:46 - ERROR - v: 6.8.7 - m: 50.0 MB, u: 1 - cURL error 28: Resolving timed out after 5000 milliseconds (http_request_failed) - 
+28-11-2020 08:29:46 - ERROR - v: 6.8.7 - m: 50.3 MB, u: 1 - cURL error 6: Could not resolve host: www.thenewsletterplugin.com (http_request_failed) - 
+28-11-2020 08:29:46 - ERROR - v: 6.8.7 - m: 50.3 MB, u: 1 - cURL error 6: Could not resolve host: www.thenewsletterplugin.com (http_request_failed) - 
+28-11-2020 08:30:24 - ERROR - v: 6.8.7 - m: 44.6 MB, u: 1 - cURL error 6: Could not resolve host: www.thenewsletterplugin.com (http_request_failed) - 
+28-11-2020 08:30:24 - ERROR - v: 6.8.7 - m: 44.6 MB, u: 1 - cURL error 6: Could not resolve host: www.thenewsletterplugin.com (http_request_failed) - 
+28-11-2020 08:30:32 - ERROR - v: 6.8.7 - m: 49.7 MB, u: 1 - cURL error 6: Could not resolve host: www.thenewsletterplugin.com (http_request_failed) - 
+28-11-2020 08:30:32 - ERROR - v: 6.8.7 - m: 49.7 MB, u: 1 - cURL error 6: Could not resolve host: www.thenewsletterplugin.com (http_request_failed) - 
+28-11-2020 08:30:32 - ERROR - v: 6.8.7 - m: 50.0 MB, u: 1 - cURL error 6: Could not resolve host: www.thenewsletterplugin.com (http_request_failed) - 
+28-11-2020 08:30:33 - ERROR - v: 6.8.7 - m: 50.6 MB, u: 1 - cURL error 6: Could not resolve host: www.thenewsletterplugin.com (http_request_failed) - 
+28-11-2020 08:30:33 - ERROR - v: 6.8.7 - m: 50.6 MB, u: 1 - cURL error 6: Could not resolve host: www.thenewsletterplugin.com (http_request_failed) - 
+28-11-2020 08:32:47 - ERROR - v: 6.8.7 - m: 49.8 MB, u: 1 - cURL error 28: Operation timed out after 5002 milliseconds with 0 bytes received (http_request_failed) - 
+28-11-2020 08:32:52 - ERROR - v: 6.8.7 - m: 49.8 MB, u: 1 - cURL error 28: Operation timed out after 5000 milliseconds with 0 bytes received (http_request_failed) - 
+28-11-2020 08:32:57 - ERROR - v: 6.8.7 - m: 50.0 MB, u: 1 - cURL error 28: Operation timed out after 5002 milliseconds with 0 bytes received (http_request_failed) - 
+28-11-2020 08:33:03 - ERROR - v: 6.8.7 - m: 53.8 MB, u: 1 - cURL error 28: Operation timed out after 5002 milliseconds with 0 bytes received (http_request_failed) - 
+28-11-2020 08:33:08 - ERROR - v: 6.8.7 - m: 53.9 MB, u: 1 - cURL error 28: Operation timed out after 5001 milliseconds with 0 bytes received (http_request_failed) - 
