@@ -181,6 +181,7 @@ class WPSR_Template_Share_Icons{
         }
 
         $all_icons_html = '<div class="' . implode( " ", $classes ) . '">' . implode( "\n", $icons_html ) . '</div>';
+        $all_icons_html = "";
         $row_html = $all_icons_html;
 
         $wrap_classes = '';

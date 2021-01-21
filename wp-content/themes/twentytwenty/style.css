@@ -6802,3 +6802,9 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
 .align_text_justify {
     text-align: justify;
 }
+
+.align_button_center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

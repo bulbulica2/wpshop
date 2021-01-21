@@ -702,7 +702,7 @@ class WC_Countries {
 				'required'     => 'required' === get_option( 'woocommerce_checkout_address_2_field', 'optional' ),
 			),
 			'city'       => array(
-				'label'        => __( 'Town / City', 'woocommerce' ),
+				'label'        => __( 'Orașul', 'woocommerce' ),
 				'required'     => true,
 				'class'        => array( 'form-row-wide', 'address-field' ),
 				'autocomplete' => 'address-level2',
@@ -718,7 +718,7 @@ class WC_Countries {
 				'priority'     => 80,
 			),
 			'postcode'   => array(
-				'label'        => __( 'Postcode / ZIP', 'woocommerce' ),
+				'label'        => __( 'Codul poștal', 'woocommerce' ),
 				'required'     => true,
 				'class'        => array( 'form-row-wide', 'address-field' ),
 				'validate'     => array( 'postcode' ),
