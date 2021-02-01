@@ -15,48 +15,78 @@
  * @version     1.6.4
  */
 
-if ( ! defined( 'ABSPATH' ) ) {
-	exit; // Exit if accessed directly
+if (!defined('ABSPATH')) {
+    exit; // Exit if accessed directly
 }
 
-get_header( 'shop' ); ?>
+get_header('shop');
+?>
 
-	<?php
-		/**
-		 * woocommerce_before_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
-		 * @hooked woocommerce_breadcrumb - 20
-		 */
-		do_action( 'woocommerce_before_main_content' );
-	?>
+    <div>
+        <header class="entry-header has-text-align-center header-footer-group">
+            <div class="entry-header-inner section-inner medium">
+                <?php
 
-		<?php while ( have_posts() ) : ?>
-			<?php the_post(); ?>
+                /**
+                 * Allow child themes and plugins to filter the display of the categories in the article header.
+                 *
+                 * @param bool Whether to show the categories in article header, Default true.
+                 *
+                 * @since Twenty Twenty 1.0
+                 *
+                 */
+                $show_categories = apply_filters('twentytwenty_show_categories_in_entry_header', true);
 
-			<?php wc_get_template_part( 'content', 'single-product' ); ?>
+                if (true === $show_categories && has_category()) {
+                    ?>
 
-		<?php endwhile; // end of the loop. ?>
+                    <div class="entry-categories">
+                        <span class="screen-reader-text"><?php _e('Categories', 'twentytwenty'); ?></span>
+                        <div class="entry-categories-inner">
+                            <?php the_category(' '); ?>
+                        </div>
+                    </div>
 
-	<?php
-		/**
-		 * woocommerce_after_main_content hook.
-		 *
-		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
-		 */
-		do_action( 'woocommerce_after_main_content' );
-	?>
+                    <?php
+                }
 
-	<?php
-		/**
-		 * woocommerce_sidebar hook.
-		 *
-		 * @hooked woocommerce_get_sidebar - 10
-		 */
-		do_action( 'woocommerce_sidebar' );
-	?>
+                the_title('<h1 class="entry-title"">', '</h1>');
+                ?>
+
+            </div>
+        </header>
+    </div>
 
 <?php
-get_footer( 'shop' );
+/**
+ * woocommerce_before_main_content hook.
+ *
+ * @hooked woocommerce_output_content_wrapper - 10 (outputs opening divs for the content)
+ * @hooked woocommerce_breadcrumb - 20
+ */
+do_action('woocommerce_before_main_content');
+
+while (have_posts()) {
+    the_post();
+
+    wc_get_template_part('content', 'single-product');
+}
+
+/**
+ * woocommerce_after_main_content hook.
+ *
+ * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
+ */
+do_action('woocommerce_after_main_content');
+
+/**
+ * woocommerce_sidebar hook.
+ *
+ * @hooked woocommerce_get_sidebar - 10
+ */
+do_action('woocommerce_sidebar');
+
+get_custom_footer('with-buttons');
+get_footer('shop');
 
 /* Omit closing PHP tag at the end of PHP files to avoid "headers already sent" issues. */

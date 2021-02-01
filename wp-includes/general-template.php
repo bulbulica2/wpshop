@@ -95,6 +95,42 @@ function get_footer( $name = null, $args = array() ) {
 }
 
 /**
+ * Load footer template.
+ *
+ * Includes the footer template for a theme or if a name is specified then a
+ * specialised footer will be included.
+ *
+ * For the parameter, if the file is called "footer-special.php" then specify
+ * "special".
+ *
+ * @since 1.5.0
+ * @since 5.5.0 A return value was added.
+ * @since 5.5.0 The `$args` parameter was added.
+ *
+ * @param string $name The name of the specialised footer.
+ * @param array  $args Optional. Additional arguments passed to the footer template.
+ *                     Default empty array.
+ * @return void|false Void on success, false if the template does not exist.
+ */
+function get_custom_footer($name = null, $args = array())
+{
+    do_action('get_footer', $name, $args);
+
+    $templates = array();
+    $name = (string)$name;
+
+    if ('' !== $name) {
+        $templates[] = "template-parts/footer-{$name}.php";
+    }
+
+    $templates[] = 'footer.php';
+
+    if (!locate_template($templates, true, true, $args)) {
+        return false;
+    }
+}
+
+/**
  * Load sidebar template.
  *
  * Includes the sidebar template for a theme or if a name is specified then a
