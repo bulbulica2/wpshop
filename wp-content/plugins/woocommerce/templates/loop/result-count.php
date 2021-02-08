@@ -28,7 +28,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		_e( 'Showing the single result', 'woocommerce' );
 	} elseif ( $total <= $per_page || -1 === $per_page ) {
 		/* translators: %d: total results */
-		printf( _n( 'Showing all %d result', 'Showing all %d results', $total, 'woocommerce' ), $total );
+		printf( _n( 'Arată un singur rezultat', 'Arată toate cele %d rezultate', $total, 'woocommerce' ), $total );
 	} else {
 		$first = ( $per_page * $current ) - $per_page + 1;
 		$last  = min( $total, $per_page * $current );

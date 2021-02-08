@@ -1350,6 +1350,57 @@ function get_the_term_list( $post_id, $taxonomy, $before = '', $sep = '', $after
 }
 
 /**
+ * Retrieves a post's terms as a list with specified format.
+ *
+ * Terms are linked to their respective term listing pages.
+ *
+ * @since 2.5.0
+ *
+ * @param int    $post_id  Post ID.
+ * @param string $taxonomy Taxonomy name.
+ * @param string $before   Optional. String to use before the terms. Default empty.
+ * @param string $sep      Optional. String to use between the terms. Default empty.
+ * @param string $after    Optional. String to use after the terms. Default empty.
+ * @return string|false|WP_Error A list of terms on success, false if there are no terms,
+ *                               WP_Error on failure.
+ */
+function get_the_term_list_without_href( $post_id, $taxonomy, $before = '', $sep = '', $after = '' ) {
+    $terms = get_the_terms( $post_id, $taxonomy );
+
+    if ( is_wp_error( $terms ) ) {
+        return $terms;
+    }
+
+    if ( empty( $terms ) ) {
+        return false;
+    }
+
+    $links = array();
+
+    foreach ( $terms as $term ) {
+        $link = get_term_link( $term, $taxonomy );
+        if ( is_wp_error( $link ) ) {
+            return $link;
+        }
+        $links[] = $term->name;
+    }
+
+    /**
+     * Filters the term links for a given taxonomy.
+     *
+     * The dynamic portion of the filter name, `$taxonomy`, refers
+     * to the taxonomy slug.
+     *
+     * @since 2.5.0
+     *
+     * @param string[] $links An array of term links.
+     */
+    $term_links = apply_filters( "term_links-{$taxonomy}", $links );  // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
+
+    return $before . join( $sep, $term_links ) . $after;
+}
+
+/**
  * Retrieves term parents with separator.
  *
  * @since 4.8.0

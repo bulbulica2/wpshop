@@ -55,6 +55,14 @@ function the_title( $before = '', $after = '', $echo = true ) {
 	}
 }
 
+function the_shop_title($before = '', $after = '') {
+    $title = 'SHOP';
+
+    $title = $before . $title . $after;
+
+    echo $title;
+}
+
 /**
  * Sanitize the current title when retrieving or displaying.
  *

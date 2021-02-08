@@ -1118,6 +1118,19 @@ function wc_get_product_category_list( $product_id, $sep = ', ', $before = '', $
 }
 
 /**
+ * Returns the product categories in a list.
+ *
+ * @param int    $product_id Product ID.
+ * @param string $sep (default: ', ').
+ * @param string $before (default: '').
+ * @param string $after (default: '').
+ * @return string
+ */
+function wc_get_product_category_list_without_href( $product_id, $sep = ', ', $before = '', $after = '' ) {
+    return get_the_term_list_without_href( $product_id, 'product_cat', $before, $sep, $after );
+}
+
+/**
  * Returns the product tags in a list.
  *
  * @param int    $product_id Product ID.

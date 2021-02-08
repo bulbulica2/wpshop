@@ -2406,6 +2406,10 @@ body:not(.singular) main > article:first-of-type {
 	padding: 4rem 0;
 }
 
+.shop-title-h1 {
+    padding: 4rem 0;
+}
+
 .entry-categories {
 	line-height: 1.25;
 	margin-bottom: 2rem;
@@ -5073,11 +5077,11 @@ a.to-the-top > * {
 
 	/* POST HEADER */
 
-	.singular .entry-header {
+	.singular .entry-header, .shop-title-h1 {
 		padding: 8rem 0;
 	}
 
-	.entry-categories {
+    .entry-categories {
 		margin-bottom: 3rem;
 	}
 
