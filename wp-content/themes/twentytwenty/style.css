@@ -6534,9 +6534,9 @@ input[id^='gform_submit_button_'],
 #gform_submit_button_1,
 #gform_submit_button_2,
 #gform_submit_button_3 {
-    border-radius: 22%;
-    color: #f0dadd;
-    background-color: #570812;
+    /*border-radius: 10%;*/
+    color: #ffffff;
+    background-color: #cd2653;
     transition: 0.4s;
 }
 
@@ -6544,8 +6544,7 @@ input[id^='gform_submit_button_']:hover,
 #gform_submit_button_1:hover,
 #gform_submit_button_2:hover,
 #gform_submit_button_3:hover {
-    color: #570812;
-    background-color: #f0dadd;
+    text-decoration: underline;
 }
 
 .custom-footer-social-wrapper {
