@@ -27,10 +27,10 @@ do_action( 'woocommerce_before_cart' ); ?>
 			<tr>
 				<th class="product-remove">&nbsp;</th>
 				<th class="product-thumbnail">&nbsp;</th>
-				<th class="product-name"><?php esc_html_e( 'Product', 'woocommerce' ); ?></th>
-				<th class="product-price"><?php esc_html_e( 'Price', 'woocommerce' ); ?></th>
-				<th class="product-quantity"><?php esc_html_e( 'Quantity', 'woocommerce' ); ?></th>
-				<th class="product-subtotal"><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
+				<th class="product-name"><?php esc_html_e( 'Produs', 'woocommerce' ); ?></th>
+				<th class="product-price"><?php esc_html_e( 'Preț', 'woocommerce' ); ?></th>
+				<th class="product-quantity"><?php esc_html_e( 'Cantitate', 'woocommerce' ); ?></th>
+				<th class="product-subtotal"><?php esc_html_e( 'Total', 'woocommerce' ); ?></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -140,12 +140,13 @@ do_action( 'woocommerce_before_cart' ); ?>
 
 					<?php if ( wc_coupons_enabled() ) { ?>
 						<div class="coupon">
-							<label for="coupon_code"><?php esc_html_e( 'Coupon:', 'woocommerce' ); ?></label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" /> <button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?></button>
+							<label for="coupon_code"><?php esc_html_e( 'Coupon:', 'woocommerce' ); ?></label> <input type="text"
+                                                                                                       name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Codul cuponului', 'woocommerce' ); ?>" /> <button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Aplică cuponul', 'woocommerce' ); ?>"><?php esc_attr_e( 'Aplică cuponul', 'woocommerce' ); ?></button>
 							<?php do_action( 'woocommerce_cart_coupon' ); ?>
 						</div>
 					<?php } ?>
 
-					<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
+					<button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Actualizează coșul', 'woocommerce' ); ?></button>
 
 					<?php do_action( 'woocommerce_cart_actions' ); ?>
 

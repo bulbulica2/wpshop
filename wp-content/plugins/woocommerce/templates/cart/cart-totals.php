@@ -27,7 +27,7 @@ defined( 'ABSPATH' ) || exit;
 	<table cellspacing="0" class="shop_table shop_table_responsive">
 
 		<tr class="cart-subtotal">
-			<th><?php esc_html_e( 'Subtotal', 'woocommerce' ); ?></th>
+			<th><?php esc_html_e( 'Total produse', 'woocommerce' ); ?></th>
 			<td data-title="<?php esc_attr_e( 'Subtotal', 'woocommerce' ); ?>"><?php wc_cart_totals_subtotal_html(); ?></td>
 		</tr>
 
@@ -49,8 +49,8 @@ defined( 'ABSPATH' ) || exit;
 		<?php elseif ( WC()->cart->needs_shipping() && 'yes' === get_option( 'woocommerce_enable_shipping_calc' ) ) : ?>
 
 			<tr class="shipping">
-				<th><?php esc_html_e( 'Shipping', 'woocommerce' ); ?></th>
-				<td data-title="<?php esc_attr_e( 'Shipping', 'woocommerce' ); ?>"><?php woocommerce_shipping_calculator(); ?></td>
+				<th><?php esc_html_e( 'Transport', 'woocommerce' ); ?></th>
+				<td data-title="<?php esc_attr_e( 'Transport', 'woocommerce' ); ?>"><?php woocommerce_shipping_calculator(); ?></td>
 			</tr>
 
 		<?php endif; ?>

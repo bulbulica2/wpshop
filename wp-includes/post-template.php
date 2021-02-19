@@ -56,7 +56,7 @@ function the_title( $before = '', $after = '', $echo = true ) {
 }
 
 function the_shop_title($before = '', $after = '') {
-    $title = 'SHOP';
+    $title = 'MAGAZIN';
 
     $title = $before . $title . $after;
 

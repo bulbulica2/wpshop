@@ -32,11 +32,11 @@ if ( ! wc_coupons_enabled() ) { // @codingStandardsIgnoreLine.
 	?></p>
 
 	<p class="form-row form-row-first">
-		<input type="text" name="coupon_code" class="input-text" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" id="coupon_code" value="" />
+		<input type="text" name="coupon_code" class="input-text" placeholder="<?php esc_attr_e( 'Codul cuponului', 'woocommerce' ); ?>" id="coupon_code" value="" />
 	</p>
 
 	<p class="form-row form-row-last">
-		<button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_html_e( 'Apply coupon', 'woocommerce' ); ?></button>
+		<button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Aplică cupon', 'woocommerce' ); ?>"><?php esc_html_e( 'Aplică cupon', 'woocommerce' ); ?></button>
 	</p>
 
 	<div class="clear"></div>
