@@ -61,7 +61,7 @@
               <?php
           }
 
-          the_title('<h1 class="entry-title">', '</h1>');
+          the_title('<h1 class="entry-title home_page"><img class="logo_image_title" src="wp-content/uploads/logo.png" alt="Logo">', '</h1>');
           ?>
 
       </div>

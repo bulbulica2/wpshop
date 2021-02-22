@@ -17,7 +17,7 @@
 
 defined( 'ABSPATH' ) || exit;
 
-get_header( 'shop' );
+get_header( 'magazin' );
 ?>
   <div>
     <header class="entry-header has-text-align-center header-footer-group">

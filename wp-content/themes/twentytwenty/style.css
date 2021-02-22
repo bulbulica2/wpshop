@@ -6747,6 +6747,11 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
     font-size: 3.6rem;
 }
 
+.home_page .logo_image_title {
+    display: inline-block;
+    vertical-align:middle;
+}
+
 .single-product .entry-title {
     margin: 0 0 0 0;
 }
