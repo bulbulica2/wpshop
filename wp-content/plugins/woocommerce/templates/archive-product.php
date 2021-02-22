@@ -23,7 +23,7 @@ get_header( 'magazin' );
     <header class="entry-header has-text-align-center header-footer-group">
       <div class="entry-header-inner section-inner medium">
           <?php
-          the_shop_title('<h1 class="entry-title shop-title-h1">', '</h1>');
+          the_shop_title('<h1 class="entry-title shop-title-h1 logo_page"><img class="logo_image_title" src="wp-content/uploads/logo.png" alt="">', '</h1>');
           ?>
       </div>
     </header>

@@ -43,7 +43,7 @@ if ( is_singular() ) {
 		}
 
 		if ( is_singular() ) {
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<h1 class="entry-title logo_page"><img class="logo_image_title" src="wp-content/uploads/logo.png" alt="">', '</h1>' );
 		} else {
 			the_title( '<h2 class="entry-title heading-size-1"><a href="' . esc_url( get_permalink() ) . '">', '</a></h2>' );
 		}
