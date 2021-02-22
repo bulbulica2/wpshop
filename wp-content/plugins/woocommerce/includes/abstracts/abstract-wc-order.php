@@ -2030,7 +2030,7 @@ abstract class WC_Abstract_Order extends WC_Abstract_Legacy_Order {
 	protected function add_order_item_totals_shipping_row( &$total_rows, $tax_display ) {
 		if ( $this->get_shipping_method() ) {
 			$total_rows['shipping'] = array(
-				'label' => __( 'Shipping:', 'woocommerce' ),
+				'label' => __( 'Transport:', 'woocommerce' ),
 				'value' => $this->get_shipping_to_display( $tax_display ),
 			);
 		}

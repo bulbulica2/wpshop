@@ -2032,7 +2032,7 @@ class WC_Order extends WC_Abstract_Order {
 	protected function add_order_item_totals_payment_method_row( &$total_rows, $tax_display ) {
 		if ( $this->get_total() > 0 && $this->get_payment_method_title() && 'other' !== $this->get_payment_method_title() ) {
 			$total_rows['payment_method'] = array(
-				'label' => __( 'Payment method:', 'woocommerce' ),
+				'label' => __( 'Metodă de plată:', 'woocommerce' ),
 				'value' => $this->get_payment_method_title(),
 			);
 		}

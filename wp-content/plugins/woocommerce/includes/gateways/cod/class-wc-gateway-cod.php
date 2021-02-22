@@ -90,7 +90,7 @@ class WC_Gateway_COD extends WC_Payment_Gateway {
 				'title'       => __( 'Instructions', 'woocommerce' ),
 				'type'        => 'textarea',
 				'description' => __( 'Instructions that will be added to the thank you page.', 'woocommerce' ),
-				'default'     => __( 'Pay with cash upon delivery.', 'woocommerce' ),
+				'default'     => __( 'Plătește cu cash la livrare.', 'woocommerce' ),
 				'desc_tip'    => true,
 			),
 			'enable_for_methods' => array(
