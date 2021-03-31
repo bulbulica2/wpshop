@@ -6486,10 +6486,10 @@ a.to-the-top > * {
 }
 
 /* custom */
-@font-face {
-    font-family: 'Dancing Script', cursive;
-    src: url(assets/fonts/DancingScript.ttf) format("ttf");
-}
+/*@font-face {*/
+/*    font-family: 'Dancing Script', cursive;*/
+/*    src: url(assets/fonts/DancingScript.ttf) format("ttf");*/
+/*}*/
 
 @font-face {
     font-family: 'Rozha One', serif;
@@ -6839,4 +6839,10 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+@media screen and (min-device-width: 800px) and (min-device-height: 600px) {
+    .theme-twentytwenty .wc-block-grid__product-title {
+        font-size: inherit;
+    }
 }
