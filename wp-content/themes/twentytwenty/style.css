@@ -6884,7 +6884,7 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
     margin-bottom: 30px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     #products_display_large_on_phone .wc-block-grid__product {
         max-width: 100%;
     }
