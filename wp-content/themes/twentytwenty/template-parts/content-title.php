@@ -69,7 +69,7 @@
   </div>
 
 
-  <div class="post-inner" id="post-inner">
+  <div class="post-inner entry_content_home" id="post-inner">
 
     <div class="entry-content">
 

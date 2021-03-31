@@ -6846,3 +6846,40 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
         font-size: inherit;
     }
 }
+
+.site_content_home .entry-content h2 {
+    margin-top: 0;
+}
+
+@media screen and (min-device-width: 1400px) {
+    .entry_content_home {
+        margin-top: -40px;
+    }
+}
+
+@media screen and (min-device-width: 800px) {
+    .entry_content_home {
+        margin-top: -50px;
+    }
+
+    .site_content_home {
+        margin-bottom: -40px;
+    }
+}
+
+.gform_title {
+    text-align: center;
+    color: #cd2653;
+}
+
+.product_title {
+    color: #000000;
+}
+
+#gform_wrapper_1 {
+    margin-top: 60px;
+}
+
+#gform_wrapper_1 .gform_heading {
+    margin-bottom: 30px;
+}

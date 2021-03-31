@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-<main id="site-content" role="main">
+<main id="site-content" role="main" class="site_content_home">
 
     <?php
 
