@@ -71,7 +71,8 @@ abstract class AbstractProductGrid extends AbstractDynamicBlock {
 		$classes = $this->get_container_classes();
 		$output  = implode( '', array_map( array( $this, 'render_product' ), $products ) );
 
-		return sprintf( '<div class="%s"><ul class="wc-block-grid__products">%s</ul></div>', esc_attr( $classes ), $output );
+		return sprintf( '<div class="%s"><ul id="products_display_large_on_phone" class="wc-block-grid__products">%s</ul></div>', esc_attr( $classes ),
+            $output );
 	}
 
 	/**

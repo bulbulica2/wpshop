@@ -6883,3 +6883,19 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
 #gform_wrapper_1 .gform_heading {
     margin-bottom: 30px;
 }
+
+@media (max-width: 768px) {
+    #products_display_large_on_phone .wc-block-grid__product {
+        max-width: 100%;
+    }
+
+    .content_page_despre figure img {
+        display: none;
+    }
+
+    .content_page_despre > div:first-of-type {
+        padding: 0;
+        margin-top: -70px;
+        margin-bottom: -50px;
+    }
+}
