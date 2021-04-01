@@ -1049,10 +1049,10 @@ class WC_Coupon extends WC_Legacy_Coupon {
 	public static function get_generic_coupon_error( $err_code ) {
 		switch ( $err_code ) {
 			case self::E_WC_COUPON_NOT_EXIST:
-				$err = __( 'Coupon does not exist!', 'woocommerce' );
+				$err = __( 'Couponul nu există!', 'woocommerce' );
 				break;
 			case self::E_WC_COUPON_PLEASE_ENTER:
-				$err = __( 'Please enter a coupon code.', 'woocommerce' );
+				$err = __( 'Te rugăm să introduci codul cuponului.', 'woocommerce' );
 				break;
 			default:
 				$err = '';
