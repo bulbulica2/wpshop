@@ -751,7 +751,7 @@ class WC_Checkout {
 						break;
 					case 'billing':
 						/* translators: %s: field name */
-						$field_label = sprintf( _x( 'Billing %s', 'checkout-validation', 'woocommerce' ), $field_label );
+						$field_label = sprintf( _x( 'Câmpul %s', 'checkout-validation', 'woocommerce' ), $field_label );
 						break;
 				}
 
@@ -813,7 +813,7 @@ class WC_Checkout {
 
 				if ( $validate_fieldset && $required && '' === $data[ $key ] ) {
 					/* translators: %s: field name */
-					$errors->add( $key . '_required', apply_filters( 'woocommerce_checkout_required_field_notice', sprintf( __( '%s is a required field.', 'woocommerce' ), '<strong>' . esc_html( $field_label ) . '</strong>' ), $field_label ), array( 'id' => $key ) );
+					$errors->add( $key . '_required', apply_filters( 'woocommerce_checkout_required_field_notice', sprintf( __( '%s este obligatoriu.', 'woocommerce' ), '<strong>' . esc_html( $field_label ) . '</strong>' ), $field_label ), array( 'id' => $key ) );
 				}
 			}
 		}
