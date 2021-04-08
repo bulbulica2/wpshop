@@ -623,11 +623,11 @@ class WC_Form_Handler {
 				// Don't show undo link if removed item is out of stock.
 				if ( $product && $product->is_in_stock() && $product->has_enough_stock( $cart_item['quantity'] ) ) {
 					/* Translators: %s Product title. */
-					$removed_notice  = sprintf( __( '%s removed.', 'woocommerce' ), $item_removed_title );
+					$removed_notice  = sprintf( __( '%s a fost șters.', 'woocommerce' ), $item_removed_title );
 					$removed_notice .= ' <a href="' . esc_url( wc_get_cart_undo_url( $cart_item_key ) ) . '" class="restore-item">' . __( 'Undo?', 'woocommerce' ) . '</a>';
 				} else {
 					/* Translators: %s Product title. */
-					$removed_notice = sprintf( __( '%s removed.', 'woocommerce' ), $item_removed_title );
+					$removed_notice = sprintf( __( '%s a fost șters.', 'woocommerce' ), $item_removed_title );
 				}
 
 				wc_add_notice( $removed_notice, apply_filters( 'woocommerce_cart_item_removed_notice_type', 'success' ) );
