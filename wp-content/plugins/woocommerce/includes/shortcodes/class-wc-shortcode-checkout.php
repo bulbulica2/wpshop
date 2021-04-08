@@ -253,6 +253,14 @@ class WC_Shortcode_Checkout {
 		// Empty current cart.
 		wc_empty_cart();
 
+		//send email here - address => checkout/order-received/ $order_id ?key= $order_key
+        if (!WC()->session->email || WC()->session->email != $order->data['billing']['email']) {
+            WC()->session->set('email', $order->data['billing']['email']);
+            $mail = new NewsletterMailer("");
+            $mail->mail($order->data['billing']['email'], "Comanda numărul " . $order->get_id() . " a fost recepționată",
+                array("text" => "Comanda dumneavoastră a fost recepționată"));
+        }
+
 		wc_get_template( 'checkout/thankyou.php', array( 'order' => $order ) );
 	}
 
