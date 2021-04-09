@@ -258,9 +258,11 @@ class WC_Shortcode_Checkout {
             $subject = "Comanda cu numărul $order_id a fost recepționată cu succes";
             $path = $_SERVER['SCRIPT_URI'] . "?key=" . $order_key;
             $orderItems = wc_get_order($order_id)->get_items();
+            $orderTotalPrice = $order->get_data()['total'];
             $orderMessage = "";
             foreach ($orderItems as $item_key => $item) {
-                $orderMessage .= "<tr><td>" . $item->get_name() . "</td><td>" . $item->get_quantity() . "</td></tr>";
+                $orderMessage .= "<tr><td>" . $item->get_name() . "</td><td>" . $item->get_quantity() . "</td><td>" .
+                    $item->get_data()['total'] . "</td></tr>";
             }
             $message = "
                     <html>
@@ -272,10 +274,11 @@ class WC_Shortcode_Checkout {
                       <a href=" . '"' . $path . '"' . ">Detaliile comenzii</a>
                       <table>
                         <tr>
-                          <th>Produs</th><th>Cantitate</th>
+                          <th>Produs</th><th>Cantitate</th><th>Subtotal</th>
                         </tr>
                         $orderMessage
                       </table>
+                      <b>Sumă totală: $orderTotalPrice</b>
                       <p>Pentru mai multe informații legate de produse le găsiți pe site.</p>
                     </body>
                     </html>
