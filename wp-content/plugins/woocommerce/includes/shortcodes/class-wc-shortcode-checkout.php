@@ -256,9 +256,28 @@ class WC_Shortcode_Checkout {
 		//send email here - address => checkout/order-received/ $order_id ?key= $order_key
         if (!WC()->session->email || WC()->session->email != $order->data['billing']['email']) {
             WC()->session->set('email', $order->data['billing']['email']);
-            $mail = new NewsletterMailer("");
-            $mail->mail($order->data['billing']['email'], "Comanda numărul " . $order->get_id() . " a fost recepționată",
-                array("text" => "Comanda dumneavoastră a fost recepționată"));
+            $to = $order->data['billing']['email'];
+            $subject = 'Comanda cu numărul ' . $order->get_id() . ' a fost recepționată cu succes';
+//            $path = explode("checkout", $_SERVER['SCRIPT_URI'])[0];
+            $path = $_SERVER['SCRIPT_URI'];
+            $message = "
+                        <html>
+                        <head>
+                          <title>$subject</title>
+                        </head>
+                        <body>
+                          <p>Toate informațiile comenzii sunt disponibile accesând următorul link:</p>
+                          <a href=". '"' . $path . '"' .">Detaliile comenzii</a>
+                          <p>$path</p>
+                        </body>
+                        </html>
+                        ";
+
+            $headers[] = 'MIME-Version: 1.0';
+            $headers[] = 'Content-type: text/html; charset=iso-8859-2';
+            $headers[] = 'From: Dreamland Shop <shop@dreamlandbyflavia.com>';
+
+            mail($to, $subject, $message, implode("\r\n", $headers));
         }
 
 		wc_get_template( 'checkout/thankyou.php', array( 'order' => $order ) );
