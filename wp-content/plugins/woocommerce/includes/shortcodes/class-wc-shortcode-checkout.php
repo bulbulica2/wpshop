@@ -256,6 +256,7 @@ class WC_Shortcode_Checkout {
         if ($order->data['billing']['email']) {
             $to = $order->data['billing']['email'];
             $subject = "Comanda cu numărul $order_id a fost recepționată cu succes";
+            $serverAddress = "https://" . $_SERVER['SERVER_NAME'] . "/shop";
             $orderItems = wc_get_order($order_id)->get_items();
             $orderTotalPrice = $order->get_data()['total'];
             $orderMessage = "";
@@ -280,7 +281,7 @@ class WC_Shortcode_Checkout {
                       <br>
                       <b>Sumă totală: $orderTotalPrice</b>
                       <br>
-                      <p>Pentru mai multe informații legate de produse le găsiți pe site.</p>
+                      <p>Pentru mai multe informații legate de produse le găsiți pe <a href=" . '"' . $serverAddress . '"' . ">Dreamland Shop</a>.</p>
                     </body>
                     </html>
                     ";
