@@ -273,6 +273,9 @@ class WC_Shortcode_Checkout {
                     table, th, td {
                       border: 1px solid black;
                     }
+                    td, th {
+                      text-align:center;
+                    }
                     </style>
                     <body>
                       <p>Informațiile comenzii sunt următoarele:</p>
