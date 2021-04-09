@@ -253,28 +253,36 @@ class WC_Shortcode_Checkout {
 		// Empty current cart.
 		wc_empty_cart();
 
-		//send email here - address => checkout/order-received/ $order_id ?key= $order_key
-        if (!WC()->session->email || WC()->session->email != $order->data['billing']['email']) {
-            WC()->session->set('email', $order->data['billing']['email']);
+        if ($order->data['billing']['email']) {
             $to = $order->data['billing']['email'];
-            $subject = 'Comanda cu numărul ' . $order->get_id() . ' a fost recepționată cu succes';
-//            $path = explode("checkout", $_SERVER['SCRIPT_URI'])[0];
-            $path = $_SERVER['SCRIPT_URI'];
+            $subject = "Comanda cu numărul $order_id a fost recepționată cu succes";
+            $path = $_SERVER['SCRIPT_URI'] . "?key=" . $order_key;
+            $orderItems = wc_get_order($order_id)->get_items();
+            $orderMessage = "";
+            foreach ($orderItems as $item_key => $item) {
+                $orderMessage .= "<tr><td>" . $item->get_name() . "</td><td>" . $item->get_quantity() . "</td></tr>";
+            }
             $message = "
-                        <html>
-                        <head>
-                          <title>$subject</title>
-                        </head>
-                        <body>
-                          <p>Toate informațiile comenzii sunt disponibile accesând următorul link:</p>
-                          <a href=". '"' . $path . '"' .">Detaliile comenzii</a>
-                          <p>$path</p>
-                        </body>
-                        </html>
-                        ";
+                    <html>
+                    <head>
+                      <title>$subject</title>
+                    </head>
+                    <body>
+                      <p>Toate informațiile comenzii sunt următoarele:</p>
+                      <a href=" . '"' . $path . '"' . ">Detaliile comenzii</a>
+                      <table>
+                        <tr>
+                          <th>Produs</th><th>Cantitate</th>
+                        </tr>
+                        $orderMessage
+                      </table>
+                      <p>Pentru mai multe informații legate de produse le găsiți pe site.</p>
+                    </body>
+                    </html>
+                    ";
 
             $headers[] = 'MIME-Version: 1.0';
-            $headers[] = 'Content-type: text/html; charset=iso-8859-2';
+            $headers[] = 'Content-type: text/html; charset=UTF-8';
             $headers[] = 'From: Dreamland Shop <shop@dreamlandbyflavia.com>';
 
             mail($to, $subject, $message, implode("\r\n", $headers));
