@@ -6899,7 +6899,7 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
         margin-bottom: -50px;
     }
 
-    .woocommerce-message .restore-item {
+    .woocommerce-message .restore-item, .to-the-top {
         padding-left: 20px;
         white-space: nowrap;
     }
