@@ -275,6 +275,7 @@ class WC_Shortcode_Checkout {
                     }
                     td, th {
                       text-align:center;
+                      padding: 5px;
                     }
                     </style>
                     <body>
