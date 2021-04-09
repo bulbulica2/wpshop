@@ -269,6 +269,11 @@ class WC_Shortcode_Checkout {
                     <head>
                       <title>$subject</title>
                     </head>
+                    <style>
+                    table, th, td {
+                      border: 1px solid black;
+                    }
+                    </style>
                     <body>
                       <p>Informațiile comenzii sunt următoarele:</p>
                       <br>
