@@ -256,7 +256,6 @@ class WC_Shortcode_Checkout {
         if ($order->data['billing']['email']) {
             $to = $order->data['billing']['email'];
             $subject = "Comanda cu numărul $order_id a fost recepționată cu succes";
-            $path = $_SERVER['SCRIPT_URI'] . "?key=" . $order_key;
             $orderItems = wc_get_order($order_id)->get_items();
             $orderTotalPrice = $order->get_data()['total'];
             $orderMessage = "";
@@ -270,15 +269,17 @@ class WC_Shortcode_Checkout {
                       <title>$subject</title>
                     </head>
                     <body>
-                      <p>Toate informațiile comenzii sunt următoarele:</p>
-                      <a href=" . '"' . $path . '"' . ">Detaliile comenzii</a>
+                      <p>Informațiile comenzii sunt următoarele:</p>
+                      <br>
                       <table>
                         <tr>
                           <th>Produs</th><th>Cantitate</th><th>Subtotal</th>
                         </tr>
                         $orderMessage
                       </table>
+                      <br>
                       <b>Sumă totală: $orderTotalPrice</b>
+                      <br>
                       <p>Pentru mai multe informații legate de produse le găsiți pe site.</p>
                     </body>
                     </html>
