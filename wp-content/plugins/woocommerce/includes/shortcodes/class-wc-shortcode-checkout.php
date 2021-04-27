@@ -282,7 +282,6 @@ class WC_Shortcode_Checkout {
                       <p>Bună! Comanda ta a fost înregistrată.</p>
                       <br>
                       <p>Detalii comandă:</p>
-                      <br>
                       <table>
                         <tr>
                           <th>Produs</th><th>Cantitate</th><th>Subtotal</th>
@@ -290,11 +289,9 @@ class WC_Shortcode_Checkout {
                         $orderMessage
                       </table>
                       <br>
-                      <b>Total sumă de plată: $orderTotalPrice RON</b>
-                      <br>
+                      <b>Total sumă de plată: $orderTotalPrice RON.</b>
                       <br>
                       <p>Mulțumim! Revenim în curând cu detalii atunci când comanda va pleca spre tine.</p>
-                      <br>
                       <p>Pentru mai multe detalii legate de produse poți consulta site-ul <a href=" . '"' . $serverAddress . '"' . ">Dreamland Shop</a>.</p>
                     </body>
                     </html>
