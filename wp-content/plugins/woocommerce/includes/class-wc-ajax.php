@@ -227,10 +227,10 @@ class WC_AJAX {
 		$coupon = isset( $_POST['coupon'] ) ? wc_format_coupon_code( wp_unslash( $_POST['coupon'] ) ) : false; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput.InputNotSanitized
 
 		if ( empty( $coupon ) ) {
-			wc_add_notice( __( 'Sorry there was a problem removing this coupon.', 'woocommerce' ), 'error' );
+			wc_add_notice( __( 'Scuze, a apărut o problemă cu acest cupon.', 'woocommerce' ), 'error' );
 		} else {
 			WC()->cart->remove_coupon( $coupon );
-			wc_add_notice( __( 'Coupon has been removed.', 'woocommerce' ) );
+			wc_add_notice( __( 'Cuponul a fost îndepărtat cu succes.', 'woocommerce' ) );
 		}
 
 		wc_print_notices();

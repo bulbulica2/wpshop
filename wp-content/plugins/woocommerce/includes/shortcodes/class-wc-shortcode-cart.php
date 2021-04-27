@@ -52,7 +52,7 @@ class WC_Shortcode_Cart {
 			WC()->customer->set_calculated_shipping( true );
 			WC()->customer->save();
 
-			wc_add_notice( __( 'Shipping costs updated.', 'woocommerce' ), 'notice' );
+			wc_add_notice( __( 'Adresa a fost actualizată.', 'woocommerce' ), 'notice' );
 
 			do_action( 'woocommerce_calculated_shipping' );
 

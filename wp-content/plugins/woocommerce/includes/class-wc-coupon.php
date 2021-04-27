@@ -935,10 +935,10 @@ class WC_Coupon extends WC_Legacy_Coupon {
 	public function get_coupon_message( $msg_code ) {
 		switch ( $msg_code ) {
 			case self::WC_COUPON_SUCCESS:
-				$msg = __( 'Coupon code applied successfully.', 'woocommerce' );
+				$msg = __( 'Cuponul a fost aplicat cu succes.', 'woocommerce' );
 				break;
 			case self::WC_COUPON_REMOVED:
-				$msg = __( 'Coupon code removed successfully.', 'woocommerce' );
+				$msg = __( 'Cuponul a fost scos cu succes.', 'woocommerce' );
 				break;
 			default:
 				$msg = '';
@@ -960,7 +960,7 @@ class WC_Coupon extends WC_Legacy_Coupon {
 				break;
 			case self::E_WC_COUPON_NOT_EXIST:
 				/* translators: %s: coupon code */
-				$err = sprintf( __( 'Coupon "%s" does not exist!', 'woocommerce' ), esc_html( $this->get_code() ) );
+				$err = sprintf( __( 'Cuponul "%s" nu există!', 'woocommerce' ), esc_html( $this->get_code() ) );
 				break;
 			case self::E_WC_COUPON_INVALID_REMOVED:
 				/* translators: %s: coupon code */
@@ -971,7 +971,7 @@ class WC_Coupon extends WC_Legacy_Coupon {
 				$err = sprintf( __( 'Sorry, it seems the coupon "%s" is not yours - it has now been removed from your order.', 'woocommerce' ), esc_html( $this->get_code() ) );
 				break;
 			case self::E_WC_COUPON_ALREADY_APPLIED:
-				$err = __( 'Coupon code already applied!', 'woocommerce' );
+				$err = __( 'Cuponul este deja adăugat!', 'woocommerce' );
 				break;
 			case self::E_WC_COUPON_ALREADY_APPLIED_INDIV_USE_ONLY:
 				/* translators: %s: coupon code */

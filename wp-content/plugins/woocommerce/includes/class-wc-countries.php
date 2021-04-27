@@ -710,7 +710,7 @@ class WC_Countries {
 			),
 			'state'      => array(
 				'type'         => 'state',
-				'label'        => __( 'State / County', 'woocommerce' ),
+				'label'        => __( 'Județ', 'woocommerce' ),
 				'required'     => true,
 				'class'        => array( 'form-row-wide', 'address-field' ),
 				'validate'     => array( 'state' ),
@@ -1210,7 +1210,7 @@ class WC_Countries {
 					),
 					'RO' => array(
 						'state' => array(
-							'label'    => __( 'County', 'woocommerce' ),
+							'label'    => __( 'Județ', 'woocommerce' ),
 							'required' => true,
 						),
 					),

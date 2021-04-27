@@ -584,7 +584,8 @@ class WC_Discounts {
 	protected function validate_coupon_exists( $coupon ) {
 		if ( ! $coupon->get_id() && ! $coupon->get_virtual() ) {
 			/* translators: %s: coupon code */
-			throw new Exception( sprintf( __( 'Coupon "%s" does not exist!', 'woocommerce' ), esc_html( $coupon->get_code() ) ), 105 );
+			throw new Exception( sprintf( __( 'Cuponul "%s" nu există!', 'woocommerce' ), esc_html(
+			    $coupon->get_code() ) ), 105 );
 		}
 
 		return true;
@@ -648,7 +649,7 @@ class WC_Discounts {
 	 */
 	protected function validate_coupon_expiry_date( $coupon ) {
 		if ( $coupon->get_date_expires() && apply_filters( 'woocommerce_coupon_validate_expiry_date', time() > $coupon->get_date_expires()->getTimestamp(), $coupon, $this ) ) {
-			throw new Exception( __( 'This coupon has expired.', 'woocommerce' ), 107 );
+			throw new Exception( __( 'Acest cupon a expirat.', 'woocommerce' ), 107 );
 		}
 
 		return true;
@@ -667,7 +668,11 @@ class WC_Discounts {
 
 		if ( $coupon->get_minimum_amount() > 0 && apply_filters( 'woocommerce_coupon_validate_minimum_amount', $coupon->get_minimum_amount() > $subtotal, $coupon, $subtotal ) ) {
 			/* translators: %s: coupon minimum amount */
-			throw new Exception( sprintf( __( 'The minimum spend for this coupon is %s.', 'woocommerce' ), wc_price( $coupon->get_minimum_amount() ) ), 108 );
+			throw new Exception(  __( 'Suma minimă de cumpărare pentru acest cupon este ' . $coupon->get_minimum_amount
+                () . '.',
+                'woocommerce'
+            ),
+                108 );
 		}
 
 		return true;
@@ -686,7 +691,8 @@ class WC_Discounts {
 
 		if ( $coupon->get_maximum_amount() > 0 && apply_filters( 'woocommerce_coupon_validate_maximum_amount', $coupon->get_maximum_amount() < $subtotal, $coupon ) ) {
 			/* translators: %s: coupon maximum amount */
-			throw new Exception( sprintf( __( 'The maximum spend for this coupon is %s.', 'woocommerce' ), wc_price( $coupon->get_maximum_amount() ) ), 112 );
+			throw new Exception( sprintf( __( 'Suma maximă de cumpărare pentru acest cupon este %s.', 'woocommerce' ),
+                 $coupon->get_maximum_amount() ), 112 );
 		}
 
 		return true;
