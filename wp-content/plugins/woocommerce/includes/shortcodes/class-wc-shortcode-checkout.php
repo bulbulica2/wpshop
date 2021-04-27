@@ -280,7 +280,6 @@ class WC_Shortcode_Checkout {
                     </style>
                     <body>
                       <p>Bună! Comanda ta a fost înregistrată.</p>
-                      <br>
                       <p>Detalii comandă:</p>
                       <table>
                         <tr>
