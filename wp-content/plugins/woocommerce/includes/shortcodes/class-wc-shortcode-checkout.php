@@ -271,7 +271,7 @@ class WC_Shortcode_Checkout {
                     </head>
                     <style>
                     table, th, td {
-                      border: 1px solid black;
+                      border: 1px solid #585858;
                     }
                     td, th {
                       text-align:center;
