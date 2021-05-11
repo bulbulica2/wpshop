@@ -1041,7 +1041,7 @@ class GFFormDisplay {
 				if ( gf_upgrade()->get_submissions_block() ){
 					$validation_message = "<div class='gf_submission_limit_message'><p>" . esc_html__( 'Your form was not submitted. Please try again in a few minutes.', 'gravityforms' ) . '</p></div>';
 				} else {
-					$validation_message = "<div class='validation_error'>" . esc_html__( 'There was a problem with your submission.', 'gravityforms' ) . ' ' . esc_html__( 'Errors have been highlighted below.', 'gravityforms' ) . '</div>';
+					$validation_message = "<div class='validation_error'>" . esc_html__( 'Formularul nu s-a trimis. Câmpurile care necesită completare sunt evidențiate mai jos.', 'gravityforms' ) . '</div>';
 				}
 				$form_string .= gf_apply_filters( array( 'gform_validation_message', $form_id ), $validation_message, $form );
 			}
@@ -1819,7 +1819,7 @@ class GFFormDisplay {
 			//display error message if field is marked as required and the submitted value is empty
 			if ( $field->isRequired && self::is_empty( $field, $form['id'] ) ) {
 				$field->failed_validation  = true;
-				$field->validation_message = empty( $field->errorMessage ) ? __( 'This field is required.', 'gravityforms' ) : $field->errorMessage;
+				$field->validation_message = empty( $field->errorMessage ) ? __( 'Trebuie să completezi câmpul.', 'gravityforms' ) : $field->errorMessage;
 			} //display error if field does not allow duplicates and the submitted value already exists
 			else if ( $field->noDuplicates && RGFormsModel::is_duplicate( $form['id'], $field, $value ) ) {
 				$field->failed_validation = true;

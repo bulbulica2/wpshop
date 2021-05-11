@@ -6903,4 +6903,12 @@ body:not(.overlay-header) .toggle-inner .toggle-text {
         padding-left: 20px;
         white-space: nowrap;
     }
+
+    input[id^='gform_submit_button_'],
+    #gform_submit_button_1,
+    #gform_submit_button_2,
+    #gform_submit_button_3 {
+        font-size: 1.5rem;
+        padding: 0.7em 0.1em;
+    }
 }
