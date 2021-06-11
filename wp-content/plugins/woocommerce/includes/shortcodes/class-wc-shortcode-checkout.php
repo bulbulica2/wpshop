@@ -301,6 +301,8 @@ class WC_Shortcode_Checkout {
             $headers[] = 'From: Dreamland Shop <shop@dreamlandbyflavia.com>';
 
             mail($to, $subject, $message, implode("\r\n", $headers));
+            $shopMail = 'dreamland_shop@yahoo.com';
+            mail($shopMail, $subject, $message, implode("\r\n", $headers));
         }
 
 		wc_get_template( 'checkout/thankyou.php', array( 'order' => $order ) );
